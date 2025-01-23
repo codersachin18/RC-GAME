@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; 
+    color: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+#navbar {
+    width: 100%;
+    background-color: #129912;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px 20px; 
+}
+
+#logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #071102; 
+}
+
+#wallet {
+    font-size: 18px;
+    
+    
+}
+
+#game-container {
+    text-align: center;
+    border: 2px solid #333;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #1e1e1e, #3a3a3a); 
+    width: 400px; 
+}
+
+#history {
+    margin-bottom: 20px;
+}
+
+#history-list {
+    max-height: 100px; 
+    overflow-y: auto; 
+}
+
+#multiplier-display {
+    font-size: 24px;
+}
+
+#plane-container {
+    width: 300px;
+    height: 300px;
+    border: 2px solid #333;
+    position: relative;
+    overflow: hidden; 
+    margin: auto; 
+}
+
+#plane {
+    width: 50px; 
+    height: 30px; 
+    right: 122px;
+    position: absolute;
+    bottom: 0;
+}
+
+#controls {
+    margin-top: 20px;
+}
+
+.button-container {
+   display:flex ;
+   justify-content :space-between ; 
+   margin-top :10px ; 
+}
+
+button {
+   padding :10px 20px ; 
+   background-color :green ; 
+   color:white ; 
+   border:none ; 
+   border-radius :5px ; 
+   box-shadow :0 4px 8px rgba(0,0,0,0.2) ;
+}
+
+input[type=number] {
+   padding :10px ; 
+   margin-right :5px ; 
+}
+
+#result {
+   margin-top :20px ; 
+}
+
+#user-activity {
+   margin-top :20px ; 
+   background-color : rgb(3, 3, 51); 
+   padding :10px ; 
+   border-radius :5px ; 
+   color:white; 
+   max-height :150px; 
+   overflow-y:auto; 
+}
+
+#activity-list {
+   list-style-type:none; 
+   padding-left :0 ; 
+   display:flex ;
+   flex-direction :column ; 
+   align-items:center ; 
+}
+
+.activity-win {
+   color : rgb(71, 83, 71) ; 
+   background-color: #00ff00;
+   padding-left: 22px;
+   padding-right: 22px;
+}
+
+.activity-loss {
+   background-color: red;
+   padding-right: 12px;
+   padding-left: 9px;
+}
+
+
+@media (max-width: 600px) {
+   #navbar {
+       flex-direction: column; 
+       align-items: flex-start; 
+       padding-left: 10px; 
+       padding-right: 10px;
+   }
+
+   #wallet {
+       margin-top: 5px; 
+       text-align:center ;
+       width :100% ;
+       display:flex ;
+       justify-content:end;
+       align-items:center ;
+       margin-bottom :5px;
+       padding-left: 12px;
+       font-weight: bold;
+       
+   }
+}
+
+#footer {
+    background-color: #1e1e1e; /* Dark background for footer */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    padding: 10px 0; /* Padding for spacing */
+    position: relative; /* Positioning */
+    bottom: 0; /* Align to bottom */
+    width: 100%; /* Full width */
+}
+
